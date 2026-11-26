@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lessons from a centenarian — The Roads of Mr. Onofre</title>
+<meta name="description" content="Mr. Onofre is 105 and spent more than 70 of those years behind the wheel. A book of his stories and lessons, and an invitation to listen to the centenarians in your own family.">
+<meta property="og:title" content="Lessons from a centenarian">
+<meta property="og:description" content="105 years on the road, told by the man who drove every mile. The first of 630,000 books that have not been written yet.">
+<meta property="og:image" content="hero.jpg?v=3">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<link rel="alternate" hreflang="pt-BR" href="./">
+<link rel="alternate" hreflang="en" href="en.html">
+<meta name="theme-color" content="#F5F6F4">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2326282B'/%3E%3Crect x='14' y='4' width='4' height='7' fill='%23F0B323'/%3E%3Crect x='14' y='13' width='4' height='7' fill='%23F0B323'/%3E%3Crect x='14' y='22' width='4' height='7' fill='%23F0B323'/%3E%3C/svg%3E">
+<link rel="preload" href="archivo.woff2?v=3" as="font" type="font/woff2" crossorigin>
+<style>
+  @font-face{font-family:"Archivo";src:url("archivo.woff2?v=3") format("woff2");font-weight:100 900;font-stretch:62% 125%;font-display:swap}
+  @font-face{font-family:"Source Serif 4";src:url("source-serif.woff2?v=3") format("woff2");font-weight:200 900;font-style:normal;font-display:swap}
+  @font-face{font-family:"Source Serif 4";src:url("source-serif-italic.woff2?v=3") format("woff2");font-weight:200 900;font-style:italic;font-display:swap}
+
+  :root{
+    --papel:#F5F6F4;
+    --asfalto:#26282B;
+    --grafite:#5C6066;
+    --linha:#DCDDD8;
+    --faixa:#F0B323;
+    --carimbo:#2B47A3;
+    --branco:#FFFFFF;
+
+    --sans:"Archivo", system-ui, sans-serif;
+    --serif:"Source Serif 4", Georgia, serif;
+
+    --wrap:1180px;
+    --gutter:clamp(20px,5vw,56px);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--papel);color:var(--asfalto);font-family:var(--sans);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  img{display:block;max-width:100%;height:auto}
+  a{color:inherit}
+  :focus-visible{outline:3px solid var(--carimbo);outline-offset:3px;border-radius:2px}
+  .wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--gutter)}
+  .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+  /* Letreiro: o título condensado, como destino de ônibus */
+  .letreiro{font-family:var(--sans);font-stretch:68%;font-weight:800;letter-spacing:-.01em;line-height:.9}
+
+  /* ---------- Topo ---------- */
+  .topo{display:flex;justify-content:space-between;align-items:center;padding-top:22px;padding-bottom:22px}
+  .marca{font-weight:600;font-size:15px;text-decoration:none;letter-spacing:.005em}
+  .marca span{color:var(--grafite);font-weight:400}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;font:600 16px/1 var(--sans);background:var(--asfalto);color:var(--papel);border:0;border-radius:999px;padding:14px 22px;text-decoration:none;cursor:pointer;transition:background .2s}
+  .btn:hover{background:var(--carimbo)}
+  .btn--leve{background:transparent;color:var(--asfalto);box-shadow:inset 0 0 0 1.5px var(--asfalto);padding:11px 18px;font-size:15px}
+  .btn--leve:hover{background:var(--asfalto);color:var(--papel)}
+
+  /* ---------- Hero ---------- */
+  .hero{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:clamp(28px,5vw,72px);align-items:end;padding-top:clamp(28px,6vw,72px);padding-bottom:clamp(40px,6vw,64px)}
+  .hero h1{font-size:clamp(68px,12.5vw,176px)}
+  .hero .sub{font-family:var(--serif);font-size:clamp(20px,2.1vw,26px);line-height:1.4;max-width:30ch;margin-top:clamp(22px,3vw,36px)}
+  .hero .movimento{margin-top:18px;color:var(--grafite);font-size:16px;max-width:44ch}
+  .hero .acoes{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:32px}
+  .hero .acoes small{color:var(--grafite);font-size:14px}
+  .retrato{position:relative}
+  .retrato img{width:100%;aspect-ratio:4/5;object-fit:cover;filter:contrast(1.04)}
+  .retrato figcaption{font-size:13px;color:var(--grafite);margin-top:10px}
+
+  /* Faixa de estrada */
+  .estrada-h{height:6px;background:repeating-linear-gradient(90deg,var(--faixa) 0 46px,transparent 46px 78px);background-size:78px 6px}
+  @media (prefers-reduced-motion:no-preference){
+    .estrada-h{animation:rodar 2.6s cubic-bezier(.2,.7,.2,1) 1 both}
+    @keyframes rodar{from{background-position:-780px 0;opacity:.0}to{background-position:0 0;opacity:1}}
+  }
+
+  /* ---------- Manifesto ---------- */
+  .manifesto{padding:clamp(72px,10vw,128px) var(--gutter);display:grid;grid-template-columns:minmax(0,auto) minmax(0,1fr);gap:clamp(28px,6vw,88px);align-items:center}
+  .placa{background:var(--asfalto);color:var(--faixa);border-radius:10px;padding:22px 28px 20px;text-align:left;min-width:250px}
+  .placa .n{font-size:clamp(64px,8vw,104px)}
+  .placa .de{font-family:var(--sans);font-stretch:80%;font-weight:500;color:#C9CBC6;font-size:17px;margin-top:8px}
+  .manifesto p{font-family:var(--serif);font-size:clamp(21px,2.3vw,30px);line-height:1.38;max-width:34ch}
+  .manifesto p + p{margin-top:.7em;color:var(--grafite);font-size:clamp(18px,1.7vw,21px);max-width:46ch}
+  .fonte{font-family:var(--sans);font-size:13px;color:var(--grafite);margin-top:18px}
+
+  /* ---------- Seções ---------- */
+  .secao{padding:clamp(64px,9vw,120px) 0;border-top:1px solid var(--linha)}
+  .secao h2{font-size:clamp(46px,6.5vw,88px)}
+  .secao .intro{font-family:var(--serif);font-size:clamp(19px,1.8vw,22px);line-height:1.5;max-width:52ch;margin-top:20px;color:var(--grafite)}
+
+  /* ---------- Linha do tempo (a estrada) ---------- */
+  .viagem{list-style:none;margin-top:clamp(48px,6vw,80px);position:relative}
+  .viagem::before{content:"";position:absolute;left:47px;top:0;bottom:0;width:5px;background:repeating-linear-gradient(180deg,var(--faixa) 0 34px,transparent 34px 58px)}
+  .parada{display:grid;grid-template-columns:100px 1fr;gap:clamp(18px,3vw,40px);padding-bottom:clamp(48px,6vw,80px);position:relative}
+  .parada:last-child{padding-bottom:0}
+  .km{position:relative;z-index:1;align-self:start;justify-self:center;background:var(--branco);border:2px solid var(--asfalto);border-radius:8px;width:84px;padding:8px 0 7px;text-align:center}
+  .km b{display:block;font-size:30px}
+  .km span{display:block;font-size:12px;color:var(--grafite);margin-top:2px}
+  .parada__corpo{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.85fr);gap:clamp(20px,4vw,56px);align-items:start}
+  .parada--sem-foto .parada__corpo{grid-template-columns:minmax(0,1fr)}
+  .ano{font-size:15px;color:var(--carimbo);font-weight:600}
+  .parada h3{font-family:var(--sans);font-stretch:80%;font-weight:700;font-size:clamp(26px,2.8vw,34px);line-height:1.08;margin-top:6px;max-width:22ch}
+  .parada p{margin-top:12px;max-width:52ch;color:var(--asfalto)}
+  .fala{font-family:var(--serif);font-style:italic;font-size:19px;line-height:1.5;color:var(--grafite);margin-top:16px;max-width:44ch;padding-left:16px;border-left:3px solid var(--faixa)}
+  .parada figure img{width:100%;border-radius:4px;filter:grayscale(1) contrast(1.05)}
+  .parada figure.assinatura img{filter:none;border-radius:4px;background:var(--branco)}
+  .parada figcaption{font-size:13px;color:var(--grafite);margin-top:8px}
+
+  /* ---------- Lições ---------- */
+  .licoes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin-top:clamp(40px,5vw,64px);border-top:2px solid var(--asfalto)}
+  .licao{padding:28px 28px 36px 0;border-bottom:1px solid var(--linha)}
+  .licao:not(:nth-child(3n+1)){padding-left:28px;border-left:1px solid var(--linha)}
+  .licao h3{font-family:var(--sans);font-stretch:80%;font-weight:700;font-size:26px;line-height:1.1}
+  .licao blockquote{font-family:var(--serif);font-size:19px;line-height:1.5;margin-top:14px}
+  .licao p{font-size:15px;color:var(--grafite);margin-top:12px}
+  .aviso{font-size:14px;color:var(--grafite);margin-top:28px;max-width:70ch}
+
+  /* ---------- Livro ---------- */
+  .livro{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(32px,6vw,96px);align-items:start;margin-top:clamp(40px,5vw,64px)}
+  .capa{position:sticky;top:32px}
+  .capa img{width:100%;max-width:420px;border-radius:3px;box-shadow:0 1px 0 rgba(38,40,43,.08),0 24px 48px -24px rgba(38,40,43,.45)}
+  .preco{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:10px}
+  .preco .valor{font-size:clamp(56px,6vw,80px)}
+  .preco .doacao{font-family:var(--serif);font-size:20px;max-width:28ch;line-height:1.35}
+  .capitulos{list-style:none;margin-top:36px;columns:2;column-gap:40px}
+  .capitulos li{break-inside:avoid;display:grid;grid-template-columns:28px 1fr;gap:6px;padding:9px 0;border-bottom:1px solid var(--linha);font-size:15.5px;line-height:1.35}
+  .capitulos li span{color:var(--grafite);font-variant-numeric:tabular-nums}
+
+  /* Formulário */
+  .lista{margin-top:40px;background:var(--branco);border:1px solid var(--linha);border-radius:14px;padding:clamp(22px,3vw,32px)}
+  .lista h3{font-family:var(--sans);font-stretch:80%;font-weight:700;font-size:28px;line-height:1.1}
+  .lista > p{color:var(--grafite);margin-top:8px;font-size:16px;max-width:48ch}
+  .campos{display:grid;grid-template-columns:1fr 1.3fr auto;gap:10px;margin-top:20px}
+  .campo label{display:block;font-size:13px;font-weight:600;margin-bottom:6px}
+  .campo input{width:100%;font:400 16px/1.2 var(--sans);color:var(--asfalto);background:var(--papel);border:1.5px solid var(--linha);border-radius:10px;padding:13px 14px}
+  .campo input:focus{outline:none;border-color:var(--carimbo);box-shadow:0 0 0 3px rgba(43,71,163,.18)}
+  .campos .btn{align-self:end;height:47px}
+  .status{margin-top:14px;font-size:15px;min-height:1.4em}
+  .status.ok{color:#1F6B3A}
+  .status.erro{color:#A3262B}
+  .btn--grande{font-size:19px;padding:20px 32px;margin-top:22px}
+
+  /* ---------- Movimento ---------- */
+  .convite{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,96px);margin-top:clamp(40px,5vw,64px);align-items:start}
+  .convite .texto p{font-family:var(--serif);font-size:clamp(19px,1.8vw,22px);line-height:1.55;max-width:44ch}
+  .convite .texto p + p{margin-top:1em}
+  .perguntas{list-style:none}
+  .perguntas li{font-family:var(--serif);font-size:clamp(20px,2vw,24px);line-height:1.35;padding:18px 0;border-bottom:1px solid var(--linha)}
+  .perguntas li:first-child{border-top:2px solid var(--asfalto)}
+  .perguntas-titulo{font-size:15px;font-weight:600;margin-bottom:12px}
+
+  /* ---------- Fim ---------- */
+  .fim{position:relative;margin-top:clamp(64px,9vw,120px);background:var(--asfalto);color:var(--papel);overflow:hidden}
+  .fim__grade{display:grid;grid-template-columns:1fr 1fr;min-height:520px}
+  .fim__foto img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.05)}
+  .fim__texto{padding:clamp(40px,6vw,80px) var(--gutter);display:flex;flex-direction:column;justify-content:center}
+  .fim__texto h2{font-size:clamp(52px,7vw,104px);color:var(--papel)}
+  .fim__texto p{font-family:var(--serif);font-size:20px;line-height:1.5;color:#C9CBC6;margin-top:20px;max-width:34ch}
+  .fim__texto .btn{background:var(--faixa);color:var(--asfalto);margin-top:32px;align-self:flex-start}
+  .fim__texto .btn:hover{background:var(--papel)}
+  .rodape{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-top:28px;padding-bottom:36px;font-size:13px;color:#9EA1A6;border-top:1px solid #3A3D41}
+  .fim .estrada-h{animation:none}
+
+  .topo__links{display:flex;align-items:center;gap:20px}
+  .ig{font-size:15px;font-weight:500;text-decoration:none;display:inline-flex;align-items:center;gap:8px}
+  .ig::before{content:"";width:18px;height:18px;flex:none;background:currentColor;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2'%3E%3Crect x='3' y='3' width='18' height='18' rx='5'/%3E%3Ccircle cx='12' cy='12' r='4'/%3E%3Ccircle cx='17.5' cy='6.5' r='1' fill='black' stroke='none'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2'%3E%3Crect x='3' y='3' width='18' height='18' rx='5'/%3E%3Ccircle cx='12' cy='12' r='4'/%3E%3Ccircle cx='17.5' cy='6.5' r='1' fill='black' stroke='none'/%3E%3C/svg%3E") center/contain no-repeat}
+  .ig:hover{color:var(--carimbo)}
+  .idioma{display:inline-flex;align-items:center;gap:7px;font-size:14px;font-weight:600;text-decoration:none;padding:6px 10px;border-radius:999px;box-shadow:inset 0 0 0 1px var(--linha);background:var(--branco)}
+  .idioma:hover{box-shadow:inset 0 0 0 1.5px var(--asfalto)}
+  .bandeira{width:22px;height:auto;border-radius:2px;box-shadow:0 0 0 .5px rgba(0,0,0,.15)}
+  .fim__acoes{display:flex;flex-wrap:wrap;align-items:center;gap:20px 28px;margin-top:32px}
+  .fim__acoes .btn{margin-top:0}
+  .ig--claro{color:var(--papel)}
+  .ig--claro:hover{color:var(--faixa)}
+  .rodape a{color:#C9CBC6}
+
+  .hero h1{font-size:clamp(60px,10.2vw,146px)}
+
+  /* ---------- Responsivo ---------- */
+  @media (max-width:960px){
+    .hero{grid-template-columns:1fr}
+    .retrato{max-width:420px}
+    .manifesto{grid-template-columns:1fr}
+    .placa{justify-self:start}
+    .parada__corpo{grid-template-columns:1fr}
+    .parada figure{max-width:440px}
+    .licoes{grid-template-columns:1fr 1fr}
+    .licao:not(:nth-child(3n+1)){padding-left:0;border-left:0}
+    .licao:nth-child(even){padding-left:24px;border-left:1px solid var(--linha)}
+    .livro{grid-template-columns:1fr}
+    .capa{position:static}
+    .capa img{max-width:300px}
+    .convite{grid-template-columns:1fr}
+    .fim__grade{grid-template-columns:1fr}
+    .fim__foto{max-height:380px;overflow:hidden}
+  }
+  @media (max-width:640px){
+    body{font-size:16px}
+    .topo .btn--leve{display:none}
+    .topo{gap:16px}
+    .topo .ig{font-size:14px}
+    .topo__links{gap:12px}
+    .topo .ig span{display:none}
+    .marca span{display:none}
+    .viagem::before{left:31px}
+    .parada{grid-template-columns:64px 1fr;gap:16px}
+    .km{width:62px;padding:6px 0 5px}
+    .km b{font-size:23px}
+    .km span{font-size:11px}
+    .licoes{grid-template-columns:1fr}
+    .licao,.licao:nth-child(even){padding-left:0;border-left:0;padding-right:0}
+    .capitulos{columns:1}
+    .campos{grid-template-columns:1fr}
+    .btn--grande{width:100%}
+  }
+</style>
+</head>
+<body>
+
+<header class="wrap topo">
+  <a class="marca" href="#">licoesdeumcentenario<span>.com.br</span></a>
+  <nav class="topo__links">
+    <a class="idioma" href="./" hreflang="pt-BR" lang="pt-BR" aria-label="Ler esta página em português"><svg class="bandeira" viewBox="0 0 20 14" aria-hidden="true"><rect width="20" height="14" fill="#009C3B"/><path d="M10 1.7 18.3 7 10 12.3 1.7 7z" fill="#FFDF00"/><circle cx="10" cy="7" r="3.1" fill="#002776"/></svg><span>PT</span></a>
+    <a class="ig" href="https://www.instagram.com/onofre_centenario/" target="_blank" rel="noopener" aria-label="Instagram @onofre_centenario"><span>@onofre_centenario</span></a>
+    <a class="btn btn--leve" href="https://docs.google.com/forms/d/1-Dft92Z2_bJ5GKZzZrjyewb6U6Lsgkgi0TY_6uIOhAQ/viewform" target="_blank" rel="noopener">Join the waiting list</a>
+  </nav>
+</header>
+
+<main>
+  <section class="wrap hero" aria-labelledby="titulo">
+    <div>
+      <h1 id="titulo" class="letreiro">Lessons from a centenarian</h1>
+      <p class="sub">105 years on the road, told by the man who drove every mile.</p>
+      <p class="movimento">The first of 630,000 books that have not been written yet.</p>
+      <div class="acoes">
+        <a class="btn" href="https://docs.google.com/forms/d/1-Dft92Z2_bJ5GKZzZrjyewb6U6Lsgkgi0TY_6uIOhAQ/viewform" target="_blank" rel="noopener">Join the waiting list</a>
+        <small>R$ 14.90, with all proceeds donated to care for the elderly</small>
+      </div>
+    </div>
+    <figure class="retrato">
+      <img src="hero.jpg?v=3" alt="Mr. Onofre, at 105, smiling" width="465" height="620">
+      <figcaption>Onofre Ferreira da Silva, driver, 105 years old</figcaption>
+    </figure>
+  </section>
+
+  <div class="estrada-h" role="presentation"></div>
+
+  <section class="wrap manifesto" aria-label="Why this book exists">
+    <div class="placa" aria-label="Book 1 of 630,000">
+      <div class="n letreiro">1 in 630,000</div>
+      <div class="de">people aged 100 or older worldwide</div>
+    </div>
+    <div>
+      <p>Everyone who reaches 100 has crossed an entire century in their own way. When they are gone, their stories go with them.</p>
+      <p>This book began on an ordinary Sunday, when Mr. Onofre remembered the name of the medicine his family took during the Spanish Flu. Two months later, his grandson asked again. He gave the exact same name.</p>
+      <p class="fonte">Source: UN estimate, 2025. In Brazil, the 2022 Census counted nearly 38,000 centenarians.</p>
+    </div>
+  </section>
+
+  <section class="secao" id="estradas" aria-labelledby="t-estradas">
+    <div class="wrap">
+      <h2 id="t-estradas" class="letreiro">The roads of Mr. Onofre</h2>
+      <p class="intro">A repair shop, a lumber truck, a taxi, a city bus. More than 70 years behind the wheel, marked here by his age, like mile markers along a highway.</p>
+
+      <ol class="viagem">
+        <li class="parada">
+          <div class="km" aria-hidden="true"><b class="letreiro">16</b><span>years</span></div>
+          <div class="parada__corpo">
+            <div>
+              <div class="ano">1937</div>
+              <h3>Runs away from the barbershop to chase the truck</h3>
+              <p>His father wanted him to be a barber and set him to shining shoes in a shop in Raul Soares. Whenever the barber took his after-lunch nap, he slipped out and climbed into the cab of the lumber truck.</p>
+              <blockquote class="fala">“Mine was never the scissors. It was the steering wheel.”</blockquote>
+            </div>
+            <figure class="assinatura">
+              <img src="assinatura.jpg?v=3" alt="Handwritten note: Onofre Ferreira da Silva, 1937, 16 years old" loading="lazy" width="650" height="516">
+              <figcaption>From his notebook, 1937</figcaption>
+            </figure>
+          </div>
+        </li>
+
+        <li class="parada">
+          <div class="km" aria-hidden="true"><b class="letreiro">24</b><span>years</span></div>
+          <div class="parada__corpo">
+            <div>
+              <div class="ano">1945</div>
+              <h3>Hauls lumber and soldiers during the war</h3>
+              <p>With no gasoline left in Brazil, he drives on wood gas and fuel alcohol between Nanuque and the port of Caravelas, in Bahia. One night a lantern gets too close to the fuel: his back is burned and he spends 90 days in bed. Then he goes back to the road.</p>
+              <blockquote class="fala">“Life was hard, but I was harder than it.”</blockquote>
+            </div>
+            <figure>
+              <img src="jovem.jpg?v=3" alt="Old portrait of young Onofre in a cap and tie" loading="lazy" width="900" height="934">
+            </figure>
+          </div>
+        </li>
+
+        <li class="parada">
+          <div class="km" aria-hidden="true"><b class="letreiro">27</b><span>years</span></div>
+          <div class="parada__corpo">
+            <div>
+              <div class="ano">1948</div>
+              <h3>Gets his driver’s card at the police station</h3>
+              <p>Driver’s licenses did not exist yet. The test was one drive around the block in a 1929 Chevrolet, watched by a soldier.</p>
+              <blockquote class="fala">“This young man drives just fine. Give him his card.”</blockquote>
+            </div>
+            <figure>
+              <img src="caminhao.jpg?v=3" alt="Two men leaning on a cargo truck covered with a tarp" loading="lazy" width="1024" height="672">
+            </figure>
+          </div>
+        </li>
+
+        <li class="parada">
+          <div class="km" aria-hidden="true"><b class="letreiro">28</b><span>years</span></div>
+          <div class="parada__corpo">
+            <div>
+              <div class="ano">1949</div>
+              <h3>Moves to Belo Horizonte and starts driving buses</h3>
+              <p>He joins the Viação Vitória bus company, where he also trains new drivers. Barroca, Gameleira, Anchieta, Coração de Jesus: every neighborhood a story.</p>
+              <blockquote class="fala">“You want to learn to be a driver? Then learn respect first.”</blockquote>
+            </div>
+            <figure>
+              <img src="onibus.jpg?v=3" alt="Onofre next to an old bus on route 53-Anchieta" loading="lazy" width="501" height="620">
+            </figure>
+          </div>
+        </li>
+
+        <li class="parada">
+          <div class="km" aria-hidden="true"><b class="letreiro">31</b><span>years</span></div>
+          <div class="parada__corpo">
+            <div>
+              <div class="ano">July 19, 1952</div>
+              <h3>Marries Nilza</h3>
+              <p>A courtship of long talks on the sidewalk in Vila Santa Lúcia. Five children followed, all of them put through college by his double shifts at the wheel.</p>
+              <blockquote class="fala">“She never left my side. She was a true companion.”</blockquote>
+            </div>
+            <figure>
+              <img src="casamento.jpg?v=3" alt="Onofre and Nilza cutting their wedding cake" loading="lazy" width="1200" height="896">
+            </figure>
+          </div>
+        </li>
+
+        <li class="parada">
+          <div class="km" aria-hidden="true"><b class="letreiro">75</b><span>years</span></div>
+          <div class="parada__corpo">
+            <div>
+              <div class="ano">1996</div>
+              <h3>Named Model Driver of Minas Gerais, first place out of 480</h3>
+              <p>Never got a ticket. Never ran a red light. He waited when it turned red, and was the first to go when it turned green.</p>
+              <blockquote class="fala">“I never crashed, never hit anyone… I only got hit.”</blockquote>
+            </div>
+            <figure>
+              <img src="trofeu.jpg?v=3" alt="Onofre in a suit, smiling, holding a trophy" loading="lazy" width="830" height="1126">
+            </figure>
+          </div>
+        </li>
+
+        <li class="parada parada--sem-foto">
+          <div class="km" aria-hidden="true"><b class="letreiro">80</b><span>years</span></div>
+          <div class="parada__corpo">
+            <div>
+              <div class="ano">2000</div>
+              <h3>Steps off the bus because his children asked</h3>
+              <blockquote class="fala">“Dad, that’s enough. Time to rest!” And I listened. I stopped.</blockquote>
+            </div>
+          </div>
+        </li>
+
+        <li class="parada">
+          <div class="km" aria-hidden="true"><b class="letreiro">105</b><span>years</span></div>
+          <div class="parada__corpo">
+            <div>
+              <div class="ano">2026</div>
+              <h3>Tells it all, down to street names and house numbers</h3>
+              <p>In weekly conversations with his grandson, the stories became 15 chapters. Some moved him deeply. After one of them he cried and then fell asleep, as if he had gone back to that place.</p>
+              <blockquote class="fala">“That’s it. But only for today.”</blockquote>
+            </div>
+            <figure>
+              <img src="hoje.jpg?v=3" alt="Mr. Onofre today, in a hat and jacket, smiling" loading="lazy" width="473" height="524">
+            </figure>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="secao" id="licoes" aria-labelledby="t-licoes">
+    <div class="wrap">
+      <h2 id="t-licoes" class="letreiro">What he learned in 105 years</h2>
+      <p class="intro">People ask him how you get to 100. His answer has no secret in it: it is about how you conduct yourself.</p>
+
+      <div class="licoes">
+        <article class="licao">
+          <h3>It’s not a miracle</h3>
+          <blockquote>“Yes, it is possible to live past one hundred. But for that, you have to take care of your health in a first-class way.”</blockquote>
+          <p>Discipline, exercise and simple food, every day.</p>
+        </article>
+        <article class="licao">
+          <h3>Soda instead of liquor</h3>
+          <blockquote>“The others ordered a shot of cachaça, a beer. Me, I ordered my Guaraná soda.”</blockquote>
+          <p>He watched his after-work companions fall ill, one by one.</p>
+        </article>
+        <article class="licao">
+          <h3>Don’t run the red light</h3>
+          <blockquote>“No drinking, no running red lights, no disrespecting others.”</blockquote>
+          <p>On the road and in life, the same rule.</p>
+        </article>
+        <article class="licao">
+          <h3>Keep what has a story</h3>
+          <blockquote>“Throw it away? No way. This shoe has a story.”</blockquote>
+          <p>The white shoes he bought decades ago got new soles and still come out for special occasions.</p>
+        </article>
+        <article class="licao">
+          <h3>Knowing when to stop is courage too</h3>
+          <blockquote>“I just saw something that scared me. Really scared me.”</blockquote>
+          <p>After witnessing a robbery, he quit his job carrying payroll cash from the bank and went back to the peace of driving a bus.</p>
+        </article>
+        <article class="licao">
+          <h3>Two medals</h3>
+          <blockquote>“One from the road, as Model Driver. And another, even more important, as head of the family.”</blockquote>
+          <p>Five children with college degrees. To him, the greatest victory.</p>
+        </article>
+      </div>
+      <p class="aviso">These are life lessons in his own words, not medical advice.</p>
+    </div>
+  </section>
+
+  <section class="secao" id="livro" aria-labelledby="t-livro">
+    <div class="wrap">
+      <h2 id="t-livro" class="letreiro">The book</h2>
+      <div class="livro">
+        <div class="capa">
+          <img src="capa.jpg?v=3" alt="Cover of the book As Estradas de Sr. Onofre (The Roads of Mr. Onofre)" loading="lazy" width="900" height="1350">
+        </div>
+        <div>
+          <div class="preco">
+            <span class="valor letreiro">R$ 14.90</span>
+            <span class="doacao">All proceeds will be donated to nursing homes and organizations that care for the elderly.</span>
+          </div>
+          <p class="intro" style="margin-top:8px">15 short chapters in his own voice, with photos and documents from the family archive: work booklets and employee records from the bus companies he drove for. The book is written in Portuguese.</p>
+
+          <ol class="capitulos">
+            <li><span>1</span>From the Nash to the trophies</li>
+            <li><span>2</span>Between lumber and flames</li>
+            <li><span>3</span>The day I quit</li>
+            <li><span>4</span>The white shoes</li>
+            <li><span>5</span>The truck, the move and the miracle</li>
+            <li><span>6</span>When the gas ran out and love showed up</li>
+            <li><span>7</span>The battle God gave us</li>
+            <li><span>8</span>Model driver and head of the family</li>
+            <li><span>9</span>How to reach 105</li>
+            <li><span>10</span>On the road during the war of ’45</li>
+            <li><span>11</span>The ride home and the bowl of stew</li>
+            <li><span>12</span>Me, my grandson and the ride home from school</li>
+            <li><span>13</span>From grease to the steering wheel</li>
+            <li><span>14</span>The secret to raising a child</li>
+            <li><span>15</span>The crooked finger</li>
+          </ol>
+
+          <div class="lista" id="lista">
+            <h3>Join the waiting list</h3>
+            <p>It takes less than a minute: just leave your name and phone number, with your country code. We will let you know when the book is available. The form is in Portuguese.</p>
+            <a class="btn btn--grande" href="https://docs.google.com/forms/d/1-Dft92Z2_bJ5GKZzZrjyewb6U6Lsgkgi0TY_6uIOhAQ/viewform" target="_blank" rel="noopener">Join the waiting list</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao" id="seu-centenario" aria-labelledby="t-convite">
+    <div class="wrap">
+      <h2 id="t-convite" class="letreiro">Who is the centenarian in your family?</h2>
+      <div class="convite">
+        <div class="texto">
+          <p>This book started with one question on a Sunday. It can start that way in your home too: a grandfather, a great-grandmother, a 98-year-old neighbor who remembers everything.</p>
+          <p>Record the conversation on your phone. Write down names, streets, prices, nicknames. Ask again two months later. What they repeat is memory, and memory is the first thing we lose when nobody writes it down.</p>
+        </div>
+        <div>
+          <p class="perguntas-titulo">Questions to start with next Sunday</p>
+          <ul class="perguntas">
+            <li>What was your first job, and how much did you earn?</li>
+            <li>How did you meet the person you married?</li>
+            <li>What was the day you thought you would not make it?</li>
+            <li>What object have you kept all these years, and why?</li>
+            <li>What did you do all your life to get here in good shape?</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="fim">
+  <div class="estrada-h" role="presentation"></div>
+  <div class="fim__grade">
+    <div class="fim__foto">
+      <img src="caminho.jpg?v=3" alt="Mr. Onofre walking away across a pasture, with hills in the background" loading="lazy" width="461" height="620">
+    </div>
+    <div class="fim__texto">
+      <h2 class="letreiro">The road goes on</h2>
+      <p>Mr. Onofre still has stories to tell. And there are 630,000 more waiting for someone to sit down and listen.</p>
+      <div class="fim__acoes">
+        <a class="btn" href="https://docs.google.com/forms/d/1-Dft92Z2_bJ5GKZzZrjyewb6U6Lsgkgi0TY_6uIOhAQ/viewform" target="_blank" rel="noopener">Join the waiting list</a>
+        <a class="ig ig--claro" href="https://www.instagram.com/onofre_centenario/" target="_blank" rel="noopener">Follow on Instagram: @onofre_centenario</a>
+      </div>
+    </div>
+  </div>
+  <div class="wrap rodape">
+    <span>As Estradas do Sr. Onofre (The Roads of Mr. Onofre). Stories of Onofre Ferreira da Silva. <a href="https://www.instagram.com/onofre_centenario/" target="_blank" rel="noopener">Instagram</a></span>
+    <span>Centenarian data: United Nations (2025) and IBGE, 2022 Census.</span>
+  </div>
+</footer>
+</body>
+</html>
